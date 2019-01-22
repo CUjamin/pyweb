@@ -1,0 +1,7 @@
+*.bak
+.git/
+.idea/
+venv/
+target/
+*.log
+*.pyc
