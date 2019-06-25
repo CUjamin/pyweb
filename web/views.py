@@ -4,9 +4,12 @@ from rest_framework.decorators import api_view
 
 # Create your views here.
 @api_view(['GET'])
-def getnextflownode(request):
+def nextflownode(request):
     if request.method=='GET':
-        print("ok")
+        print("GET")
     # request.GET
     # nlpResponse=NlpReponse('tesk_1','call_2','123456',1,"SUCCESS")
-    return JsonResponse({"result":0,"msg":"OK"})
+        return JsonResponse({"result":0,"msg":"OK"})
+    elif request.method=='POST':
+        print("POST")
+        return JsonResponse({"result": 1, "msg": "OK"})

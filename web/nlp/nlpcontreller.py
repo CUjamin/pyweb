@@ -8,7 +8,7 @@ from rest_framework.response import Response
 
 @api_view(['GET'])
 def getnextflownode(request,*args):
-    if request
+
     # request.GET
     # nlpResponse=NlpReponse('tesk_1','call_2','123456',1,"SUCCESS")
     return JsonResponse({"result":0,"msg":"OK"})

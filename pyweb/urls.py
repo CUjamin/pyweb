@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from web.views import getnextflownode
+from web.views import nextflownode
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('nlp/v1/call/',getnextflownode),
+    path('nlp/v1/call/',nextflownode),
 ]
